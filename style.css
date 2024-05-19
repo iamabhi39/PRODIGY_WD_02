@@ -1,0 +1,146 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: white;
+  font-family: Sora;
+}
+
+body {
+  background-image: url('./image/background.avif');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  font-size: 16px;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  font-size: 19px;
+
+}
+
+.watch-outerbox {
+  width: 500px;
+  height: 350px;
+  border-radius: 3%;
+  background-color: #c7f85ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.watch-innerbox {
+  width: 480px;
+  height: 330px;
+  border-radius: 3%;
+  background-color: #000000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.min {
+  font-size: 48px;
+}
+
+.sec {
+  font-size: 42px;
+}
+
+.msec {
+  font-size: 32px;
+}
+.buttons {
+  margin-top: 30px;
+  width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+            
+    background-image: linear-gradient(to right, #d5e3f8 0%, #aadee7  51%, #305891  100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: rgb(7, 0, 0);            
+    box-shadow: 0 0 7px #eee;
+    border-radius: 10px;
+    display: block;
+    border: none;
+  }
+
+  .btn:hover {
+    background-position: right center; 
+    color: #ffffff;
+    text-decoration: none;
+  }
+ 
+
+
+
+.laps {
+  list-style: none;
+  height: 220px;
+  width: 350px;
+  overflow: auto;
+  margin-top: 20px;
+  position: relative;
+  padding: 30px 0;
+}
+
+.lap-item {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 30px;
+  text-align: center;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  border: 1px solid #d3cdcd;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+.number {
+  margin-right: 1rem;
+}
+
+.laps::-webkit-scrollbar {
+  display: none;
+}
+
+.clearbtn {
+  width: 7rem;
+  background-color: transparent;
+  border: 1px solid #ffffff;
+  padding: 15px 0;
+  cursor: pointer;
+  border-radius: 3rem;
+  font-size: 20px;
+  z-index: 1000;
+  font: inherit;
+}
+
+.clearbtn:hover {
+  background-color: #351919;
+  top: 0;
+  z-index: 1000;
+}
+
+.visibility{
+  visibility: hidden;
+}
+
+.laptime{
+  display: none;
+}
